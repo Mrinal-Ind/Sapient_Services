@@ -30,6 +30,7 @@ public class BookingServiceImpl implements BookingService {
         Booking bookingResponse = booking;
         BookingOffer offerOnBooking = offerProxy.getOfferOnPrice(offerInfo);
         //changes to be included
+	//Changes to test 
         BigDecimal discount = offerOnBooking.getTotalDisount();
         BigDecimal totalPrice = totalPrice(booking);
         BigDecimal finalPricePostDiscount = totalPrice.subtract(discount);
