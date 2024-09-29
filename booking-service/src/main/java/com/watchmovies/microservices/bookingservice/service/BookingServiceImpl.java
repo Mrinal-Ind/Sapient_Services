@@ -32,6 +32,8 @@ public class BookingServiceImpl implements BookingService {
         //changes to be included
 	//Changes to test
         //changes to be decided
+	//Remote changes included
+	//Remote changes not ro be included
         BigDecimal discount = offerOnBooking.getTotalDisount();
         BigDecimal totalPrice = totalPrice(booking);
         BigDecimal finalPricePostDiscount = totalPrice.subtract(discount);
