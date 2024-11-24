@@ -26,6 +26,7 @@ public class BookingServiceImpl implements BookingService {
 
 	@Override
 	public Booking saveBooking(Booking booking) {
+		//change to check chrry pick
         OfferInfo offerInfo =  transformRequest(booking);
         Booking bookingResponse = booking;
         BookingOffer offerOnBooking = offerProxy.getOfferOnPrice(offerInfo);
